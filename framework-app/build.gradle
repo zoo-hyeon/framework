@@ -1,0 +1,8 @@
+bootJar.enabled = false
+jar.enabled = true
+
+dependencies {
+    implementation project(':framework-core')
+    implementation project(':framework-api')
+    implementation project(':framework-bill')
+}
