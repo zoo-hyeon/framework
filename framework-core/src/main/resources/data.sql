@@ -64,6 +64,9 @@ VALUES(102, sysdate(), sysdate(), 1, 1, 'N', 'Y', '사용자관리 조회', 'PRG
 INSERT INTO tb_program
 (seq, created_at, updated_at, created_by, updated_by, del_yn, use_yn, prgm_nm, prgm_type, url)
 VALUES(103, sysdate(), sysdate(), 1, 1, 'N', 'Y', '테스트 Matcher', 'PRGM', '/admin/matcher/**/*');
+INSERT INTO tb_program
+(seq, created_at, updated_at, created_by, updated_by, del_yn, use_yn, prgm_nm, prgm_type, url)
+VALUES(104, sysdate(), sysdate(), 1, 1, 'N', 'Y', 'H2 DB 콘솔', 'API', '/h2-console');
 
 -- UPDATE sq_tb_program SET NEXT_VAL = 104;
 
@@ -74,6 +77,7 @@ INSERT INTO tb_role_program (role_seq, prgm_seq) VALUES(2, 103);
 INSERT INTO tb_role_program (role_seq, prgm_seq) VALUES(1, 1);
 INSERT INTO tb_role_program (role_seq, prgm_seq) VALUES(1, 4);
 INSERT INTO tb_role_program (role_seq, prgm_seq) VALUES(1, 5);
+INSERT INTO tb_role_program (role_seq, prgm_seq) VALUES(1, 104);
 
 INSERT INTO tb_role_program (role_seq, prgm_seq) VALUES(2, 2);
 INSERT INTO tb_role_program (role_seq, prgm_seq) VALUES(3, 3);
