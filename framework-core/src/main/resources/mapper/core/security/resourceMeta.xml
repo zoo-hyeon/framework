@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="framework.core.security.dao.ResourceMetaDao">
+
+    <select id="selectAllAuthorities" resultType="framework.core.security.dto.ResourceMeta">
+        SELECT
+            C.URL       AS URL
+            , A.ROLE_NM AS ROLE_NAME
+        FROM
+            TB_ROLE A
+        INNER JOIN
+            TB_ROLE_PROGRAM B
+        ON
+            A.SEQ = B.ROLE_SEQ
+        INNER JOIN
+            TB_PROGRAM C
+        ON
+            B.PRGM_SEQ = C.SEQ
+    </select>
+</mapper>

@@ -1,13 +1,11 @@
-package framework.app;
+package framework;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class SpringFramworkApplication {
-    // Develop Bill 3
     public static void main(String[] args) {
         SpringApplication.run(SpringFramworkApplication.class, args);
     }
-    // Bill
 }
