@@ -1,4 +1,4 @@
-package framework.core.user.dao;
+package framework.core.user.repository;
 
 import java.util.List;
 import java.util.Optional;

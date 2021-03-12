@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="framework.core.security.dao.ResourceMetaDao">
+<mapper namespace="framework.core.security.mapper.ResourceMetaMapper">
 
     <select id="selectAllAuthorities" resultType="framework.core.security.dto.ResourceMeta">
         SELECT

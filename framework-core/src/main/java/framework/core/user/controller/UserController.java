@@ -1,6 +1,5 @@
 package framework.core.user.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import framework.core.security.annotation.CurrentUser;
 import framework.core.security.dto.UserIdentityAvailability;
 import framework.core.security.dto.UserPrincipal;
-import framework.core.user.dao.UserRepository;
+import framework.core.user.repository.UserRepository;
 import framework.core.user.dto.UserSummary;
 import lombok.RequiredArgsConstructor;
 

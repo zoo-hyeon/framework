@@ -5,7 +5,6 @@ import java.util.Collections;
 
 import javax.validation.Valid;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -27,7 +26,7 @@ import framework.core.security.dto.LoginRequest;
 import framework.core.security.dto.SignUpRequest;
 import framework.core.security.role.entity.Role;
 import framework.core.security.role.repository.RoleRepository;
-import framework.core.user.dao.UserRepository;
+import framework.core.user.repository.UserRepository;
 import framework.core.user.entity.User;
 import lombok.RequiredArgsConstructor;
 

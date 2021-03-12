@@ -19,22 +19,17 @@ import org.springframework.stereotype.Component;
 
 import framework.core.security.dto.ResourceMeta;
 import framework.core.security.service.ResourceMetaService;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Component
+@RequiredArgsConstructor
 public class CustomFilterMetadataSource implements FilterInvocationSecurityMetadataSource, InitializingBean {
 
     private final ResourceMetaService service;
 
     private final AuthCacheManager cacheManager;
-
-    @Autowired
-    public CustomFilterMetadataSource(ResourceMetaService service, AuthCacheManager cacheManager) {
-        super();
-        this.service = service;
-        this.cacheManager = cacheManager;
-    }
 
     @Override
     public void afterPropertiesSet() throws Exception {

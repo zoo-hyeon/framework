@@ -2,6 +2,7 @@ package framework.app.config;
 
 import javax.sql.DataSource;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
@@ -14,7 +15,7 @@ import org.springframework.stereotype.Repository;
 import framework.SpringFramworkApplication;
 
 @Configuration
-@MapperScan(annotationClass = Repository.class, basePackageClasses = { SpringFramworkApplication.class }, sqlSessionFactoryRef = "sqlSessionFactory")
+@MapperScan(annotationClass = Mapper.class, basePackageClasses = { SpringFramworkApplication.class }, sqlSessionFactoryRef = "sqlSessionFactory")
 public class MybatisConfig {
 
     @Bean(name = "sqlSessionFactory")

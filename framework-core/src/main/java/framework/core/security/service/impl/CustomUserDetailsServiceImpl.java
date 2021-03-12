@@ -2,14 +2,13 @@ package framework.core.security.service.impl;
 
 import javax.transaction.Transactional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import framework.core.security.dto.UserPrincipal;
 import framework.core.security.service.CustomUserDetailsService;
-import framework.core.user.dao.UserRepository;
+import framework.core.user.repository.UserRepository;
 import framework.core.user.entity.User;
 import lombok.RequiredArgsConstructor;
 
